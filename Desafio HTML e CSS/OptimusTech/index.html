@@ -16,22 +16,22 @@
 <body>
 
     <header>
-        <div id="logo-header">
-            <a href="index.html"><img src="assets/worldwide 1 (Traced).png" alt="Logo da empresa"></a>
-            <a href="index.html" id="nome-empresa"> OptimusTech </a>
-        </div>
         <nav id="navbar">
+            <div id="logo-header">
+                <a href="index.html"><img src="assets/worldwide 1 (Traced).png" alt="Logo da empresa"></a>
+                <a href="index.html" id="nome-empresa"> OptimusTech </a>
+            </div>
             <ul id="navlist">
                 <li id="navitems"><a href="index.html">Home</a></li>
                 <li id="navitems"><a href="#">Produtos</a></li>
                 <li id="navitems"><a href="#">Recursos</a></li>
                 <li id="navitems"><a href="#">Sobre nós</a></li>
             </ul>
+            <div id="container-btn">
+                <button id="entrar">Entrar</button>
+                <button class="btn-cadastro">Cadastrar</button>
+            </div>
         </nav>
-        <div>
-            <button id="entrar">Entrar</button>
-            <button class="btn-cadastro">Cadastrar</button>
-        </div>
     </header>
 
     <section id="sobre">
@@ -40,30 +40,33 @@
         <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de
         todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
     </section>
-
-    <section id="info-cards">
-        <div class="card">
-            <h3 id="title-card">400+</h3>
-            <p><strong>Projetos Concluídos</strong></p>
-            <p>Nós ajudamos a construir mais de 400 projetos incríveis</p>
-        </div>
-        <div class="card">
-            <h3 id="title-card">100+</h3>
-            <p><strong>Colaboradores</strong></p>
-            <p>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
-
-        </div>
-        <div class="card">
-            <h3 id="title-card">20K</h3>
-            <p><strong>Downloads</strong></p>
-            <p>Nossos projetos que estão disponíveis em loja já foram baixados mais de 20.000 vezes.</p>
-        </div>
-        <div class="card">
-            <h3 id="title-card">500+</h3>
-            <p><strong>Reviews 5 estrelas</strong></p>
-            <p>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos Produtos.</p>
+    
+    <section id="infos">   
+        <div id="info-cards">
+            <div class="card">
+                <h3 id="title-card">400+</h3>
+                <p><strong>Projetos Concluídos</strong></p>
+                <p>Nós ajudamos a construir mais de 400 projetos incríveis</p>
+            </div>
+            <div class="card">
+                <h3 id="title-card">100+</h3>
+                <p><strong>Colaboradores</strong></p>
+                <p>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+            
+            </div>
+            <div class="card">
+                <h3 id="title-card">20K</h3>
+                <p><strong>Downloads</strong></p>
+                <p>Nossos projetos que estão disponíveis em loja já foram baixados mais de 20.000 vezes.</p>
+            </div>
+            <div class="card">
+                <h3 id="title-card">500+</h3>
+                <p><strong>Reviews 5 estrelas</strong></p>
+                <p>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos Produtos.</p>
+            </div>
         </div>
     </section>
+
     <section id="talentos">
             <span>Vagas abertas!</span>
             <h1>Estamos procurando por talentos</h1>
@@ -134,13 +137,15 @@
     </section>
 
     <footer>
-        <h2>Acompanhe as nossas oportunidades</h2>
-        <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
-        <form action="">
-            <input type="email" name="" id="inputEmail" placeholder="Seu e-mail">
-            <button class="btn-cadastro">Cadastrar</button>
-        </form>
-        <p id="license">© 2022 OptimusTech. Todos os direitos reservados.</p>
+        <div id="footer-content">
+            <h2>Acompanhe as nossas oportunidades</h2>
+            <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
+            <form action="">
+                <input type="email" name="" id="inputEmail" placeholder="Seu e-mail">
+                <button class="btn-cadastro">Cadastrar</button>
+            </form>
+            <p id="license">© 2022 OptimusTech. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
 </body>
