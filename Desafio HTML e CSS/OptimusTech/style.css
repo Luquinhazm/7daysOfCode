@@ -8,14 +8,21 @@
 }
 
 html{
-    font-size: 16px;
-
+    font-size: 16px; 
 }
 
 body{
     background-color: #fff;
     width: 100%;
     height: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+strong{
+    color: #000;
 }
 
 /* Inicio do Cabeçalho*/
@@ -49,11 +56,11 @@ header{
 }
 
 #navlist{
-    display: none;
+    display: flex;
     gap: 32px;
-    color:#667085;
     width: 50%;
 }
+
 
 a{
     color:#667085;
@@ -63,10 +70,6 @@ a{
     display: flex;
     align-items: center;
     gap: 24px;
-}
-
-button{
-    cursor: pointer;
 }
 
 #entrar{
@@ -86,6 +89,44 @@ button{
     border-radius: 8px;
 }
 
+.btnMobile {
+    display: none;
+    background-color: transparent;
+    border: 0;
+}
+
+#navMobile{
+    display: none;
+    background-color: rgba(142, 36, 36, 0.89);
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+    height: 50vh;
+    max-width: 1440px;
+    width: 100%;
+}
+
+#navlistM{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 50%;
+}
+
+#navlistM a{
+    color: #fff;
+}
+
+.botoesMobile{
+    background-color: #8E2424;
+    color: #fff;
+    padding: 10px 18px;
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    width: 100px;
+}
 /* Fim do cabeçalho */
 
 /*inicio sobre nós*/
@@ -96,7 +137,7 @@ button{
     align-items: center;
     justify-content: center;
     height: 400px;
-    margin: 32px 0px 32px; /*tirar depois*/
+    margin: 32px 0px 32px;
     text-align: center;
 }
 
@@ -106,9 +147,9 @@ button{
     color: #8E2424;
     font-size: 0.875rem;
     line-height: 28px;
+    text-align: center;
     height: 28px;
     width: 125px;
-    text-align: center;
     font-weight: 500;
 }
 
@@ -127,11 +168,9 @@ button{
 }
 
 #infos{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
-    
 }
 
 #info-cards{
@@ -158,10 +197,6 @@ button{
     text-align: left;
 }
 
-.card strong{
-    color: #000;
-}
-
 .card h3{
     font-size: 3.75rem;
     color: #8E2424;
@@ -186,7 +221,6 @@ button{
     line-height: 28px;
     height: 28px;
     width: 125px;
-    text-align: center;
     font-weight: 500;
 }
 
@@ -201,7 +235,6 @@ button{
     font-size: 1.25rem;
     margin-bottom: 52px;
     width: 80%;
-
 }
 
 #talentos img{
@@ -225,11 +258,6 @@ button{
     line-height: 30px;
 }
 
-#dds{
-    margin-top: 90px ;
-
-}
-
 .container-vagas{
     padding: 24px 24px 28px 24px;
     max-width: 768px;
@@ -242,7 +270,6 @@ button{
     color: #101828;
     font-size: 1.125rem;
     font-weight: 500;
-
 }
 
 .container-vagas div{
@@ -362,32 +389,52 @@ form .btn-cadastro{
 
 /*medias queries */ 
 
-@media (max-width: 1100px){
-
-}
-
-@media (min-width: 1024px)
-{
-  #info-cards
-   {
+@media (min-width: 1024px){
+  #info-cards{
     flex-wrap: nowrap;
    }
 }
 
-@media (max-width: 730px)
-{
-  #info-cards
-   {
+@media (max-width: 760px){
+    #navlist{
+        display: none;
+    }
+
+    #container-btn{
+        display: none;
+    }
+
+    #btnMobile{
+        display: block;
+    }
+
+    #navMobile.active{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+
+@media (max-width: 730px){
+  #info-cards{
     justify-content: flex-start;
 }
 }
 
-
-@media (max-width: 425px)
-{
+@media (max-width: 425px){
     html{
         font-size: 14px;
     }
+
+    #container-btn{
+        display: none;
+    }
+
+    #navlist-Tablet{
+        display: none;
+    }
+
 }
 
 @media (max-width: 360px){
@@ -399,11 +446,5 @@ form .btn-cadastro{
     }
     #sobre {
         text-align: left;
-    }
-}
-
-@media (max-width: 260px){
-    html{
-        font-size: 8px;
     }
 }

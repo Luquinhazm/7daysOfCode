@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> OptimusTech </title>
 
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="style.css">
 
@@ -21,7 +24,7 @@
                 <a href="index.html"><img src="assets/worldwide 1 (Traced).png" alt="Logo da empresa"></a>
                 <a href="index.html" id="nome-empresa"> OptimusTech </a>
             </div>
-            <ul id="navlist">
+            <ul id="navlist" class="navlist">
                 <li id="navitems"><a href="index.html">Home</a></li>
                 <li id="navitems"><a href="#">Produtos</a></li>
                 <li id="navitems"><a href="#">Recursos</a></li>
@@ -31,9 +34,25 @@
                 <button id="entrar">Entrar</button>
                 <button class="btn-cadastro">Cadastrar</button>
             </div>
-        </nav>
-    </header>
 
+            <button class="btnMobile" id="btnMobile">
+                <i class="fa-solid fa-bars" class="menu"></i>
+            </button>
+        </nav>
+        
+    </header>
+    <nav id="navMobile">
+        <ul id="navlistM">
+            <li id="navitemsM"><a href="index.html">Home</a></li>
+            <li id="navitemsM"><a href="#">Produtos</a></li>
+            <li id="navitemsM"><a href="#">Sobre nós</a></li>
+        </ul>
+        <div id="container-btnM">
+            <button class="botoesMobile">Entrar</button>
+            <button class="botoesMobile">Cadastrar</button>
+        </div>
+    </nav>
+    
     <section id="sobre">
         <span>Sobre nós</span>
         <h1>Por que somos diferentes?</h1>
@@ -147,6 +166,9 @@
             <p id="license">© 2022 OptimusTech. Todos os direitos reservados.</p>
         </div>
     </footer>
+    
+    <script src="https://kit.fontawesome.com/0af2f7e93b.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
 </body>
 </html>
