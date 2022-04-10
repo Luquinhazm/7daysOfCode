@@ -1,0 +1,59 @@
+/*medias queries */ 
+
+@media (min-width: 1024px){
+    #info-cards{
+      flex-wrap: nowrap;
+     }
+  }
+  
+  @media (max-width: 760px){
+      #navlist{
+          display: none;
+      }
+  
+      #container-btn{
+          display: none;
+      }
+  
+      #btnMobile{
+          display: block;
+      }
+  
+      #navMobile.active{
+          display: flex;
+          flex-direction: column;
+      }
+  }
+  
+  @media (max-width: 730px){
+    #info-cards{
+      justify-content: flex-start;
+  }
+  }
+  
+  @media (max-width: 425px){
+      html{
+          font-size: 14px;
+      }
+  
+      #container-btn{
+          display: none;
+      }
+  
+      #navlist-Tablet{
+          display: none;
+      }
+  
+  }
+  
+  @media (max-width: 360px){
+      form {
+          flex-direction: column;
+      }
+      .container-vagas div{
+          display: block;
+      }
+      #sobre {
+          text-align: left;
+      }
+  }

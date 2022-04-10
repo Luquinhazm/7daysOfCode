@@ -1,0 +1,113 @@
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+#logo-header{
+    display: flex;
+    align-items: center;
+    gap: 8px ;
+    font-size: 1.125rem;
+}
+
+#nome-empresa{
+    color:#3A404E ;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px 24px 0px 24px;
+}
+
+#navlist{
+    display: flex;
+    gap: 32px;
+    width: 50%;
+}
+
+
+a{
+    color:#667085;
+}
+
+#navitems a:hover{
+    color: #000;
+}
+
+#container-btn{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#entrar{
+    width: 47px;
+    height: 24px;
+    border: #fff;
+    color: #667085;
+    background-color: #fff;
+}
+
+.btn-cadastro{
+    background-color: #8E2424;
+    color: #fff;
+    padding: 10px 18px;
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+.btnMobile {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    font-size: 24px;
+}
+
+#navMobile{
+    display: none;
+    background-color: rgba(142, 36, 36, 0.89);
+    align-items: center;
+    gap: 24px;
+    height: 250px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+#navlistM{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 80%;
+}
+
+#navlistM a{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#container-btnM{
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.botoesMobile{
+    background-color: #8E2424;
+    color: #fff;
+    padding: 10px 18px;
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    width: 100px;
+}
